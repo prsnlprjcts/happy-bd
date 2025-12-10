@@ -99,11 +99,11 @@ export default function App() {
       <CloudBackground />
 
       {/* Fullscreen vertical snapping scroll */}
-      <div className="h-screen overflow-y-scroll scroll-smooth">
+      <div className="h-screen overflow-y-scroll scroll-smooth snap-y snap-proximity">
         {episodes.map((ep) => (
           <motion.section
             key={ep.id}
-            className="h-screen flex flex-col justify-center items-center px-6 text-center"
+            className="h-screen flex flex-col justify-center items-center px-6 text-center snap-start"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -124,6 +124,7 @@ export default function App() {
           </motion.section>
         ))}
       </div>
+
     </div>
   );
 }
