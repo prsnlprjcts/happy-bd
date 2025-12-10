@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Vibur');
+
+.artboard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  height: 370px;
+  padding-top: 10rem;
+  font-family: 'Vibur', cursive;
+  background-color: #b6dff6;
+  border-radius: 30px; 
+  overflow: hidden; 
+}
+
+/* Cake base */
+.cake {
+  position: relative;
+  width: 300px;
+  height: 120px;
+  background: #d2bba0;
+  /* border-radius: 20px;  */
+}
+
+.cake::before,
+.cake::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 15px;
+}
+
+.cake::before {
+  top: 56%;
+  background: rgba(164, 48, 63, 0.3);
+}
+
+.cake::after {
+  top: 77%;
+  background: #9f7e69;
+}
+
+/* Decorative top */
+.deco::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 50px;
+  background: #f3abab;
+  border-radius: 50%;
+  box-shadow: -40px 0 0 0 #f3abab, 40px 0 0 0 #f3abab, -80px 0 0 0 #f3abab, 80px 0 0 0 #f3abab;
+}
+
+/* Bunny on top of the cake */
+.bunny {
+  position: absolute;
+  bottom: 130%; /* move it above the cake */
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px); /* slight gap above cake */
+  width: 60px;
+  height: 60px;
+  background: #f4e6de;
+  border-radius: 50%;
+  z-index: 3; /* make sure it's above cake */
+}
+
+.bunny::before,
+.bunny::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  width: 15px;
+  height: 50px;
+  background: inherit;
+  transform-origin: bottom center;
+  border-radius: 50% 50% 0 0;
+}
+
+.bunny::before {
+  left: 10px;
+  transform: rotate(-20deg);
+  animation: greetSx 6s infinite;
+}
+
+.bunny::after {
+  right: 10px;
+  transform: rotate(20deg);
+  animation: greetDx 6s infinite;
+}
+
+/* Eyes */
+.eye {
+  position: absolute;
+  top: 12px;
+  width: 10px;
+  height: 18px;
+  background: rgba(154, 198, 249, 0.7);
+  border-radius: 50%;
+}
+
+.eye:nth-child(1) { left: 15px; }
+.eye:nth-child(2) { right: 15px; }
+
+.eye::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  width: 6px;
+  height: 6px;
+  background: #ffeccc;
+  border-radius: 50%;
+}
+
+.eye::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  width: 4px;
+  height: 4px;
+  background: #ffeccc;
+  border-radius: 50%;
+}
+
+/* Mouth */
+.mouth {
+  position: absolute;
+  top: 33px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 3px;
+  background: rgba(210, 187, 160, 0.7);
+  border-radius: 50%;
+}
+
+/* Marmelade bars */
+.marmelade {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  background: #d2bba0;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.marmelade--bar {
+  display: block;
+  float: left;
+  width: 6.6667%;
+  height: 50px;
+  background: rgba(164, 48, 63, 0.6);
+  border-radius: 0 0 12px 12px;
+}
+
+/* Basement */
+.basement {
+  position: absolute;
+  bottom: -25px;
+  left: -2rem;
+  right: -2rem;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+}
+
+.basement .text {
+  color: rgba(164, 48, 63, 0.6);
+}
+
+.base {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fafaf2;
+}
+
+.base::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  border-bottom: 20px solid #fafaf2;
+  border-top: 60px solid transparent;
+  border-right: 10px solid #fafaf2;
+  border-left: 30px solid transparent;
+}
+
+.base::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -40px;
+  border-bottom: 20px solid #fafaf2;
+  border-top: 60px solid transparent;
+  border-left: 10px solid #fafaf2;
+  border-right: 30px solid transparent;
+}
+
+/* Animations */
+@keyframes greetSx {
+  0%,10%,18%,100% { transform: rotate(-20deg); }
+  12%,16% { transform: rotate(-10deg); }
+  14% { transform: rotate(-20deg); }
+}
+
+@keyframes greetDx {
+  0%,10%,18%,100% { transform: rotate(20deg); }
+  12%,16% { transform: rotate(10deg); }
+  14% { transform: rotate(20deg); }
+}
+
+/* Candles */
+/* Candles container */
+.candles {
+  position: absolute;
+  top: -110px; /* above cake */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px; /* same as cake */
+  height: 50px;
+}
+
+/* Candle styles */
+.candle {
+  position: absolute;
+  bottom: 0;
+  width: 15px;
+  height: 50px;
+  background: #ffeccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.candle .flame {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 12px;
+  background: orange;
+  border-radius: 50%;
+  animation: flicker 0.3s infinite alternate;
+}
+
+/* Candle blown out */
+.candle.out {
+  background: #d2bba0;
+}
+
+/* Flame flicker */
+@keyframes flicker {
+  from { transform: translateX(-50%) scaleY(1); opacity: 1; }
+  to { transform: translateX(-50%) scaleY(0.7); opacity: 0.8; }
+}
+
+/* Fireworks */
+.fireworks {
+  position: absolute;
+  top: -160px; /* above candles */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  animation: fireworkPop 0.5s ease-in-out 0s 4 alternate;
+}
+
+@keyframes fireworkPop {
+  0% { transform: translateX(-50%) scale(0); opacity: 0; }
+  50% { transform: translateX(-50%) scale(1.2); opacity: 1; }
+  100% { transform: translateX(-50%) scale(1); opacity: 0; }
+}
+
+.candle:nth-child(1) { left: 80px; }  /* left of bunny */
+.candle:nth-child(2) { left: 150px; } /* right near bunny */
+.candle:nth-child(3) { left: 220px; }
