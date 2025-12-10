@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/happy-bd/static/css/main.1d6f2811.css",
-    "main.js": "/happy-bd/static/js/main.b38ec809.js",
+    "main.css": "/happy-bd/static/css/main.e83ab40f.css",
+    "main.js": "/happy-bd/static/js/main.a4e15188.js",
     "static/js/453.55b98ebb.chunk.js": "/happy-bd/static/js/453.55b98ebb.chunk.js",
     "static/media/bp.MOV": "/happy-bd/static/media/bp.2a1a47d7283a1a1a4f5e.MOV",
     "static/media/1.1.jpg": "/happy-bd/static/media/1.1.b2ac3d5b5e92d3fa3bfe.jpg",
     "static/media/3.1.jpg": "/happy-bd/static/media/3.1.dd7088a8b91b11911a3f.jpg",
     "index.html": "/happy-bd/index.html",
-    "main.1d6f2811.css.map": "/happy-bd/static/css/main.1d6f2811.css.map",
-    "main.b38ec809.js.map": "/happy-bd/static/js/main.b38ec809.js.map",
+    "main.e83ab40f.css.map": "/happy-bd/static/css/main.e83ab40f.css.map",
+    "main.a4e15188.js.map": "/happy-bd/static/js/main.a4e15188.js.map",
     "453.55b98ebb.chunk.js.map": "/happy-bd/static/js/453.55b98ebb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d6f2811.css",
-    "static/js/main.b38ec809.js"
+    "static/css/main.e83ab40f.css",
+    "static/js/main.a4e15188.js"
   ]
 }
