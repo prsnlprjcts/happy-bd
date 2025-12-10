@@ -99,7 +99,7 @@ export default function App() {
       <CloudBackground />
 
       {/* Fullscreen vertical snapping scroll */}
-      <div className="h-screen overflow-y-scroll scroll-smooth snap-y snap-proximity">
+      <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         {episodes.map((ep) => (
           <motion.section
             key={ep.id}
@@ -114,6 +114,7 @@ export default function App() {
 
             {ep.customSection && ep.customSection}
 
+            {/* Add this to render video if present */}
             {ep.video && (
               <video
                 src={ep.video}
@@ -123,8 +124,8 @@ export default function App() {
             )}
           </motion.section>
         ))}
-      </div>
 
+      </div>
     </div>
   );
 }
