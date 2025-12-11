@@ -14,7 +14,7 @@ const episodes = [
   {
     id: 1,
     title: "EP01 - Intro",
-    content: "Hello, my love. \n Happy birthday to you, precious. \n I hope this day is fun and you have no time for worries today! You deserve to just relax and feel the love people have for you. No words can explain how important you are to me, but here we are. \n Enjoy the slideshow, bestie",
+    content: "Hello, my love. Happy birthday to you, my precious. I hope this day is very fun and you have no time for worries today! You deserve to just relax and feel the love people have for you. No words can explain how important you are to me, but I hope this gift at least makes you smile. \n Enjoy the slideshow, bestie",
   },
   {
     id: 2,
@@ -77,7 +77,7 @@ const episodes = [
   {
     id: 4,
     title: "EP04 - Bunny's birthday",
-    content: "This is a cake to celebrate how slay you are. (Try putting out the candles!) ",
+    content: "This is a cake to celebrate how slay you are. \n (Try putting out the candles!) ",
     customSection: <Cake />
   },
   {
