@@ -14,15 +14,15 @@ const episodes = [
   {
     id: 1,
     title: "EP01 - Intro",
-    content: "Hello, my love. Happy birthday to you, precious. I hope this day is going to be fun and you have no time for worries today! You deserve to just relax and feel the love people have for you. No words can explain how important you are to me, but hell, I can at least try. Enjoy the slideshow, bestie",
+    content: "Hello, my love. \n Happy birthday to you, precious. \n I hope this day is fun and you have no time for worries today! You deserve to just relax and feel the love people have for you. No words can explain how important you are to me, but here we are. \n Enjoy the slideshow, bestie",
   },
   {
     id: 2,
-    title: "EP02 - Рандомный чел",
+    title: "EP02 - 섹시한 남자",
     customSection: (
       <div className="flex flex-col items-center mt-4">
         <p className="max-w-xs text-center text-lg opacity-80">
-          Тут какой то sexy man тебе цветы передал... Сказал мне обязательно тебе показать..
+          Тут какой то  섹시한 남자  тебе цветы передал... Сказал обязательно тебе показать..
         </p>
 
         <img
@@ -77,18 +77,18 @@ const episodes = [
   {
     id: 4,
     title: "EP04 - Bunny's birthday",
-    content: "This is a cake to celebrate how slay you are. (Try blowing out the candles!) ",
+    content: "This is a cake to celebrate how slay you are. (Try putting out the candles!) ",
     customSection: <Cake />
   },
   {
     id: 5,
     title: "EP05 - BLACKPINK Wrapped",
-    content: "You’ve been number one girl this year for 365 days. Blackpink has a special message for you.",
+    content: "You’ve been a number one girl this year for 365 days. Blackpink has a special message for you.",
     video: vid
   },
   {
     id: 6,
-    title: "EP06 - My Letter to You",
+    title: "EP06 - The Letter",
     customSection: <Letter />,
   }
 ];

@@ -13,6 +13,7 @@
   background-color: #b6dff6;
   border-radius: 30px; 
   overflow: hidden; 
+  margin-top: 10px;
 }
 
 /* Cake base */
@@ -273,7 +274,7 @@
 /* Fireworks */
 .fireworks {
   position: absolute;
-  top: -160px; /* above candles */
+  top: -200px; /* above candles */
   left: 50%;
   transform: translateX(-50%);
   font-size: 2.5rem;

@@ -56,7 +56,7 @@ export default function Cake() {
         </div>
 
         {/* Fireworks */}
-        {fireworks && <div className="fireworks">🎆🎇✨</div>}
+        {fireworks && <div className="fireworks">SLAY</div>}
 
         {/* Cake basement */}
         <div className="basement">
